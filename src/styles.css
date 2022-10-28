@@ -1,0 +1,340 @@
+﻿
+body {
+	max-width: 70%;	
+	margin: 0 auto;
+	font: 1.2em Tahoma;
+	display: grid;
+	background-color: #eaf7ff;
+	grid-template-areas:
+	"header-cell"
+	"nav-cell"
+	"main-cell"
+	"footer-cell";
+}
+main,header,footer {
+	border: 1px solid #ccc7c8;
+	background-color: #fff;
+	border-radius: 5px;
+}
+header {
+	grid-area: header-cell;
+	margin-bottom:2px;
+	height:100px;
+	padding:0 5px;
+	background-image:url(/images/img-header/background.png);
+}
+#ten-thuong-hieu{
+	padding-top: 15px;
+}
+nav{
+	grid-area: nav-cell;
+	margin-top:20px;	
+  }	
+nav a
+{	
+	float: left;
+	margin:3px;
+	border: 1px solid #fff;		
+	border-radius: 3px;	
+	padding: 2px 4px;
+	height:20px;
+	background:#ffffff80;
+	text-decoration:none;
+	font-size: 17px;
+	color:#197ef2;	
+	text-align: center;
+	box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;	
+}
+nav a:hover
+{   color:#fff;
+	background: #2c0cc9;	
+}
+form.search-container{
+	float: right;
+	padding-top: 4px;
+	}
+.icon-white,.icon-pink {
+	padding: 4px;
+	background: #2c0cc9;
+	min-width: 30px;	
+	color: #fff;
+	float: right;
+	text-align: center;
+	cursor:pointer;
+}
+.icon-pink {
+	color: #ffffff;
+	margin-left:5px;
+}
+
+main {
+	grid-area: main-cell;
+	display: grid;
+	padding:0 5px;
+}
+main.one-col
+{ 
+	grid-template-areas:
+	"left-cell" 
+	"article-cell" 
+	"right-cell";
+}
+main.two-cols-left
+{		
+	grid-template-columns: 1fr 3fr;
+	grid-template-areas:"left-cell" " article-cell";
+}
+main.two-cols-right
+{		
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas:"article-cell" " right-cell ";
+}
+main.three-cols
+{		
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:"left-cell"" article-cell ""right-cell";
+}
+article
+{	
+	grid-area:article-cell;
+}		
+aside.left-side {
+	grid-area: left-cell;
+	float: left;
+}
+aside.righ-side {
+	grid-area: right-cell;
+}
+aside.left-side,aside.righ-side
+{	
+	margin: 2px;
+	padding: 5px;	
+	text-align:justify;
+	text-justify:inter-word;
+}
+footer {
+	grid-area: footer-cell;
+	text-align:center;
+	margin-top:2px;
+}
+h1,h2,h3
+  {
+	color: #455dda;
+	font-family: Tahoma, Verdana, sans-serif,'Open Sans', sans-serif; 
+	font-weight: 300;
+  }
+h1 { 	
+	margin: 12px 0 16px;		
+	font-size: 28px; 	 
+	line-height: 34px;	 
+	text-align:center;
+	text-transform: uppercase;
+}
+h2 { 
+	margin: 5px 0 10px;
+	font-size: 24px; 
+	line-height: 28px;	
+}	
+h3 {	
+	margin: 0 0 10px;
+	font-size: 20px; 
+	line-height: 24px; 
+}
+h3.break-column{break-before: column;}
+
+.two_col{
+	column-count: 2;
+}
+#break-here{
+	break-before: column;
+}
+#img-sale{
+	margin: auto;
+	width: 1024px;
+	height: 200px;
+}
+#sanpham-trungbay{
+	border: #2c0cc9 solid 2px;
+	margin: auto;
+	display: inline-block;
+}
+div .img-trungbay{
+	margin-top: 2px;
+	
+	border: #197ef2 solid 1px;
+	width: 200px;
+	height: 200px;
+
+}	
+.detail
+{
+	padding:0px 5px;
+	margin-bottom:5px;				
+	text-align: justify;
+}
+.order-step
+{	margin-bottom:5px;
+	width:100%;		
+	text-align: center;	
+}
+.order-step section
+{
+	border: 1px solid #ed4190;
+	
+	border-radius: 5px;
+	padding-top:5px;	
+	width:24%;
+	display:inline-block;	
+}
+
+
+/**Phần Trang chủ*/
+article.main-content
+{
+	display: grid;
+	grid-template-columns: auto;
+}
+
+/**Hết phần Trang chủ******/
+.social-icon a
+{
+	text-decoration:none; 
+	color:#ed4190;
+}
+footer .gotop
+{
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	z-index: 100;
+}
+
+/**Phần trang Sản phẩm*/
+.product
+{
+    /* position: fixed; */
+	display:flex;
+	flex-wrap: wrap;		
+	padding:0px;
+	margin: 0 auto;
+}
+.product section
+{	
+	display: inline-flex;
+	flex:1;
+	flex-direction: column;
+	margin:3px;
+	border:1px solid #dbd7d9;
+	border-radius: 5px;	
+	background:linear-gradient(to top, #cddc39 0%, transparent 10%);
+}
+.product img
+{
+	display: block;
+	margin: auto;
+}
+.product h2
+{		
+	text-align: center;
+}
+
+input{
+	width: 150px;
+}
+/* .product input, .product button
+{		  	
+	display: inline-flex;
+	width: 50%;
+} */
+/* Tin tuc */
+.tin-tuc{
+	display: flex;
+  }
+  section.tin-tuc-left{
+	float: left;
+	width: 20%;
+  }
+  section.tin-tuc-right{
+	float: right;
+	width: 69%;
+	padding-left: 5px;
+  }
+  .tin-tuc img{
+	width: 250px;
+	height: 100px;
+  }
+  .tin-tuc-left img{
+	width: 100%;
+  }
+  
+  .tin-tuc-right-S{
+	display: flex;
+  }
+  .tin-tuc-right p{
+	float: left;
+	width: 79%;
+  }
+  .tin-tuc-right img{
+	float: right;
+	width: 20%;
+  }
+  
+
+/* Gioi thieu */
+article.gioi-thieu{
+	display: flex;
+  }
+  section.gt-left{
+	float: left;
+	width: 79%;
+	text-align: justify;
+  }
+  section.gt-right{
+	text-align: justify;
+	float: right;
+	width: 20%;
+	padding-left: 5px;
+  }
+  .gt-left img{
+	float: left;
+	width: 100%;
+	object-fit: contain;
+  }
+  #gt-h1-right:after {
+	position: relative;
+	display: block;
+	left: 0%;
+	content: "";
+	width: 200px;
+	height: 3px;
+	transform: rotateX(-12) translateX(50%);
+	background: -webkit-radial-gradient(#cddc39, #fff);
+  }
+  /* Dang nhap */
+
+  .dang-nhap img{
+	padding-left: 30%;
+	width: 20%;
+	height: 30%;
+  }
+  .input-container i{
+	float: left;
+	margin: auto;
+	padding-left: 0%;
+  }
+/* input {
+	padding: auto;	
+} */
+#email, #password{
+	float: right;
+	width: 60%;
+}
+
+/* Đơn hàng */
+
+.left-content-dh{
+	text-align: right;
+}
+.center-content-dh{
+	text-align: center;
+}
