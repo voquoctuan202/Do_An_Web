@@ -24,16 +24,19 @@ html {
 
 #header {
     height: 60px;
-    background-color: #000;
-    position: relative;
+    background-color: rgb(178, 57, 57);
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
 
-#header #logo  {
+#logo {
+    position: relative;
     display: inline-block;
-    line-height: 60px;
+    top: 10px;
+    width: 150px;
+    height: 50px;
 }
 
 #header img {
@@ -91,14 +94,14 @@ html {
 }
 
 #nav .subnav a {
-    color: #000;
+    color: rgb(0, 0, 0);
     width: 150px;
 }
 
-#header .search_button {
+div .search_button {
     float: right;
     font-size: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     line-height: 60px;
     padding: 0 24px;
 }
@@ -106,11 +109,15 @@ html {
 #header .search_button:hover {
     background-color: #f44336;
 }
-
+#footer {
+    text-align: center;
+}
+/* hết phần chung: header, footer
 /* #slider {
     min-height: 900px;
     background-color: #333;
 } */
+/* CSS sản phẩm*/
 h1 { 	
 	margin: 12px 0 16px;		
 	font-size: 28px; 	 
@@ -119,25 +126,13 @@ h1 {
 	text-align:center;
 	text-transform: uppercase;
 }
-h1:after {
-	position: relative;
-	left: 40%;
-	display: block;		
-	content: " "; 
-	width: 300px;
-	height: 3px;	
-    transform: rotateX(-12) translateX(50%);
-    background: -webkit-radial-gradient(#cddc39, #fff); 
-}
 .maingiohang{
-    position: relative;
-    background-color: aqua;
+    background-color: rgb(170, 170, 170);
     margin: 20px 20px;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
 .danhmuc{
-    position: relative;
     padding-left: 20px;
     margin: 2px;
     border: #000 solid 2px;
@@ -146,11 +141,10 @@ h1:after {
 .sanpham{
     break-before: column;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .product{
-    position: relative;
-    background-color: #cddc39;
+    background-color: #b4ddeb;
     border: #000 solid 2px;
     text-align: center;
     margin: 2px;
@@ -187,11 +181,65 @@ h2{
     width: 100px;
     
 }
+/* CSS trang chủ*/
+#sliderTC {
+    margin-top: 60px;
+    padding-top: 30%;
+    background:url('/assets/img/banner-web-1.jpg') top center / cover no-repeat;
+}
+
+#contentTC {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.trendingTC{
+    position: top center;
+    width: 40%;
+    margin: 40px;
+}
+
+#top-sellerTC {
+    margin-top: 60px;
+    position: top center;
+    height: auto;
+    padding-left: 50px;
+}
 
 /* #content {
 
 } */
-
-#footer {
+/*CSS đăng nhập, đăng kí*/
+#contentDNDK {
+    min-height: 796px;
+    background-color: #333;
+}
+#contentDNDK form{
+    width: 100%;
+    height: auto;
+    padding-top:100px;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-clip: content-box;
+    background-color: #fff;
+    font-size: 22px;
+}
+form .title-nameDNDK{
+    font-weight: 800;
     text-align: center;
+    font-size: 25px;
+    height: 50px;
+    padding-top: 20px;
+}
+.user , .pass , .name , .phone , .email , .repass{
+    display:grid;
+    grid-template-columns: 120px auto 20px;
+    padding: 15px 30px;
+}
+.submitDNDK{
+    display:grid;
+    padding: 20px 30px;
+    grid-template-columns: auto 120px;
+    font-size: 15px;
+    align : right;
 }
