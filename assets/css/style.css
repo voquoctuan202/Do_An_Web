@@ -308,5 +308,25 @@ form .title-nameDNDK{
     width: 100%;
     height: 200px;
 }
+/*Trang đơn hàng*/
 
-
+#donhang{
+   
+    font-size: 25px;
+    margin: 100px 80px;
+    padding: auto;
+}
+#hoadon{
+    padding: 1%;
+    border: #000 solid 2px;
+}
+#hoadon h2{
+    margin: 0 0;
+}
+#btnGiohang button{
+    margin: auto 45%;
+    top: 30px;
+    font-size: 25px;
+    width:max-content;
+    height: 5%;
+}
