@@ -113,10 +113,10 @@ div .search_button {
     text-align: center;
 }
 /* hết phần chung: header, footer
-/* #slider {
+#slider {
     min-height: 900px;
     background-color: #333;
-} */
+}
 /* CSS sản phẩm*/
 h1 { 	
 	margin: 12px 0 16px;		
@@ -185,7 +185,7 @@ h2{
 #sliderTC {
     margin-top: 60px;
     padding-top: 30%;
-    background:url('/assets/img/banner-web-1.jpg') top center / cover no-repeat;
+    background: url('/Do_An_Web/assets/img/banner-web-4.png') top center / cover no-repeat;
 }
 
 #contentTC {
@@ -212,7 +212,7 @@ h2{
 /*CSS đăng nhập, đăng kí*/
 #contentDNDK {
     min-height: 796px;
-    background-color: #333;
+    background-color: #fff;
 }
 #contentDNDK form{
     width: 100%;
@@ -221,7 +221,7 @@ h2{
     padding-left: 30%;
     padding-right: 30%;
     background-clip: content-box;
-    background-color: #fff;
+    background-color: rgb(214, 208, 208);
     font-size: 22px;
 }
 form .title-nameDNDK{
@@ -243,8 +243,71 @@ form .title-nameDNDK{
     font-size: 15px;
     align : right;
 }
+/* Lien He */
+#contentLH{
+    background-color: #ccc;
+    height: auto;
+    padding-top:100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-clip: content-box;
+}
+#contentLH h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
+#contentLH form#user{
+    display:grid;
+    padding: 0px 10px;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+}
 
+#contentLH form input{
+    height: 30px;
+    margin: 5px;
+}
+
+#contentLH select{
+    margin: 10px 15px;
+    grid-template-columns: auto auto;
+    font-size: 15px;
+    height: 30px;
+    width: 200px;
+}
+#contentLH input[type="submit"]
+{
+    margin-left: 0px;
+    width: 50px;
+}
+/* Gop Y */
+#contentLH form#gopY{
+    margin: 0px 15px;
+    width: auto;
+}
+
+#contentLH form#gopY textarea{
+    width: 100%;
+    height: 250px;
+}
+/* Bao Hanh */
+#contentLH form#baoHanh{
+    margin: 0px 15px;
+}
+#contentLH form#baoHanh #TTSP{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+#contentLH form#baoHanh #TTSP input{
+    margin-left: 0px;
+    margin-right: 10px;
+}
+#contentLH form#baoHanh textarea{
+    width: 100%;
+    height: 200px;
+}
 /*Trang đơn hàng*/
 
 #donhang{
@@ -266,5 +329,4 @@ form .title-nameDNDK{
     font-size: 25px;
     width:max-content;
     height: 5%;
-
 }
